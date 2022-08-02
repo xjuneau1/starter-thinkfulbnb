@@ -31,7 +31,14 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* ---  Groups & Items --- */
@@ -39,8 +46,15 @@ main img {
 .group {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.group img {
+  align-self: center;
 }
 
+.group h3 {
+  flex-wrap: wrap;
+}
 .item {
   flex: 1;
   margin: 10px;
@@ -102,6 +116,11 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+}
+
+.selection {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* -------  Footer ------- */
