@@ -31,7 +31,7 @@ section.alternate-background {
 }
 
 main img {
-  width: 300px;
+  width: 100%;
   margin-bottom: 10px;
 }
 
@@ -42,19 +42,13 @@ header nav ul {
 }
 
 /* ---  Groups & Items --- */
-
 .group {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .group img {
   align-self: center;
   margin-bottom: 20px;
-}
-
-.group h3 {
-  flex-wrap: wrap;
 }
 .item {
   flex: 1;
@@ -136,42 +130,37 @@ footer p {
   padding: 20px;
 }
 /*------- Host --------*/
-.host img {
-  width:400px;
-}
 
-.ideas img {
-  width: 500px;
-}
+
 /* -------  Media Query ------- */
-@media all and (min-width: 800px){
+@media all and (min-width: 480px){
   .group {
     flex-direction: row;
-    align-items: center;
+    align-content: center;
   }
   .group img {
-    margin-bottom: 10px;
+    max-width: 30%;
     margin-right: 20px;
   }
-  
-  .ideas {
-    justify-content:center ;
+  .group p {
+    align-self: center;
+  }
+  .ideas{
+    display: flex;
   }
   .ideas img {
-    width:500px;
-    margin: 0;
+    max-width: 70%;
   }
-  .host img {
-    width:600px;
-  }
-  .selection {
-    display: inline-flex;
-    margin-right: 3rem;
-  }
-  .selection label {
-    margin-right: 1rem;
+
+  main form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   form button {
-    width: 10rem;
+    max-width: 30%;
+  }
+  .selection {
+    flex-direction: column;
   }
 }
